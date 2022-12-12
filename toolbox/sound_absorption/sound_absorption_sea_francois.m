@@ -2,14 +2,14 @@ function [alpha, Boric, MgSO4, H2O, C] = sound_absorption_sea_francois ...
     (T,S,D,f,pH)
 % Arguments
 %   T: temperature \ degree Celsius \ 
-%      -2 < T < 22 for 10 Гц < f < 500 кГц
-%      0 < T < 30 for f > 500 кГц
+%      -2 < T < 22 for 10 Hz < f < 500 kHz
+%      0 < T < 30 for f > 500 kHz
 %   S: salinity \ ppt \
-%       30 < S < 35 for 10 Гц < f < 500 кГц
-%       0 < S < 40 for f > 500 кГц
+%       30 < S < 35 for 10 Hz < f < 500 kHz
+%       0 < S < 40 for f > 500 kHz
 %   D: depth \ m \ 
-%       0 < D < 3500 for 10 Гц < f < 500 кГц
-%       0 < D < 10000 for f > 500 кГц
+%       0 < D < 3500 for 10 Hz < f < 500 kHz
+%       0 < D < 10000 for f > 500 kHz
 %   f: frequency \ kHz
 %   pH: "potential of hydrogen"
 % Results
