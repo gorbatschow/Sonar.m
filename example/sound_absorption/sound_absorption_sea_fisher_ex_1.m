@@ -14,8 +14,8 @@ function result = sound_absorption_sea_fisher_ex_1()
     set(gca, 'YScale', 'log');
     grid on;
     
-    global lang;
-    if strcmpi(lang, 'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang, 'ru')
         title(['T=' num2str(T) '°C, ' ...
                'D=' num2str(D) ' м']);
         xlabel('Частота, кГц');

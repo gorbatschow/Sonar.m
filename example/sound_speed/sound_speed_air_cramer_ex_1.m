@@ -9,8 +9,8 @@ function result = sound_speed_air_cramer_ex_1()
     plot(T,C);
     grid on; grid minor;
 
-    global lang;
-    if strcmpi(lang, 'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang, 'ru')
         xlabel('Температура, °C');
         ylabel('Скорость звука, м/с');
         leg_str = cell(size(P));

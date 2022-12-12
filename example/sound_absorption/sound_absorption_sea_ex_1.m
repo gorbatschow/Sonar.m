@@ -14,8 +14,8 @@ function result = sound_absorption_sea_ex_1(func)
     set(gca, 'YScale', 'log');
     grid on;
     
-    global lang;
-    if strcmpi(lang, 'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang, 'ru')
         title(['T=' num2str(T) '°C, ' ...
                'S=' num2str(S) '‰, ' ...
                'D=' num2str(D) ' м, ' ...

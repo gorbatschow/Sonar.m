@@ -6,8 +6,8 @@ function result = depth_to_pressure_sea_ex_1(func)
     fig = figure();
     plot(L,P); grid on; grid minor;
     
-    global lang;
-    if strcmpi(lang, 'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang, 'ru')
         title(['D=' num2str(D) ' м']);
         xlabel('Широта, град.');
         ylabel('Давление, кПа');

@@ -11,8 +11,8 @@ function result = sound_speed_sea_ex_1(func)
     ylim([1400 1650]);
     xlim([-10 50]);
     
-    global lang;
-    if strcmpi(lang,'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang,'ru')
         xlabel('Температура, °C');
         ylabel('Скорость звука, м/с');
         leg_str = cell(size(D));

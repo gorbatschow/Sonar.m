@@ -9,8 +9,8 @@ function result = sound_speed_sea_ex_2(func)
     T_str = arrayfun(@(x)num2str(x,'%.0f'), T, 'UniformOutput', false);
     C_str = arrayfun(@(x)num2str(x,'%.2f'), C, 'UniformOutput', false);
     
-    global lang
-    if strcmpi(lang, 'ru')
+    global sonarm_lang
+    if strcmpi(sonarm_lang, 'ru')
         D_str = cellfun(@(x)['$' x '\ м$'], D_str, 'UniformOutput', false);
         T_str = cellfun(@(x)['$' x '°\text{C}$'], T_str, 'UniformOutput', false);
         C_str = cellfun(@(x)['$' x '$'], C_str, 'UniformOutput', false);

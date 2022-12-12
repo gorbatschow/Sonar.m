@@ -9,8 +9,8 @@ function result = sound_absorption_sea_thorp_ex_1()
     grid on;
     ylim([1e-8 1e2]);
 
-    global lang;
-    if strcmpi(lang, 'ru')
+    global sonarm_lang;
+    if strcmpi(sonarm_lang, 'ru')
         xlabel('Частота, кГц');
         ylabel('Поглощение, дБ/км');
     else
