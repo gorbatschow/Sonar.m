@@ -1,0 +1,16 @@
+function C = sound_speed_water_bilaniuk_36(T)
+% Arguments
+%    T: temperature \ degree Celsius \ 0 < T < 100
+% Results
+%    C: speed of sound in pure water \ m/s
+
+    k0 = +1.40238683e+3;
+    k1 = +5.03791214e+0;
+    k2 = -5.80879891e-2;
+    k3 = +3.33896527e-4;
+    k4 = -1.47313167e-6;
+    k5 = -3.11549781e-9;
+
+    C = k0*(T.^0) + k1*(T.^1) + k2*(T.^2) ...
+        + k3*(T.^3) + k4*(T.^4) + k5*(T.^5);
+end
