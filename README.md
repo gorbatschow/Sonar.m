@@ -5,7 +5,7 @@ Octave/Matlab toolbox for sonar related problems.
 ***This toolbox is under active development. Please let me know if you need an Octave (Matlab) implementation of some equation or algorithm related to SONAR engineering discipline (propagation, antennas, detection etc)***
 
 ## Documentation
-The documentation site is here https://gorbatschow.github.io/SonarDocs/ . 
+The documentation site is hosted here https://gorbatschow.github.io/SonarDocs/ . 
 
 See also a repository of documentation build system ![SonarDocsBuilder](https://github.com/gorbatschow/SonarDocsBuilder) .
 
