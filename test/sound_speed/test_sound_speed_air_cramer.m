@@ -19,4 +19,3 @@ end
 
 % See:
 % http://resource.npl.co.uk/acoustics/techguides/speedair/
-343.98688734488263
