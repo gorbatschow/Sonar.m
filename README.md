@@ -7,7 +7,7 @@ Octave/Matlab toolbox for sonar related problems.
 ## Documentation
 The documentation site is hosted here https://gorbatschow.github.io/SonarDocs/ . 
 
-See also a repository of documentation build system ![SonarDocsBuilder](https://github.com/gorbatschow/SonarDocsBuilder) .
+See also a documentation build system ![SonarDocsBuilder](https://github.com/gorbatschow/SonarDocsBuilder) repository.
 
 ## What's in the box
 
