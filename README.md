@@ -2,6 +2,8 @@
 
 Octave/Matlab toolbox for sonar related problems.
 
+***This toolbox is under active development. Please let me know if you need an Octave (Matlab) implementation of some equation or algorithm related to SONAR engineering discipline (propagation, antennas, detection etc)***
+
 ## What's in the box
 
 ### Sound in air
