@@ -1,11 +1,11 @@
 function test_sound_speed_air_cramer()
     
     test(1) = struct('T', 20, 'RH', 50, 'P', 101.325, ...
-        'C', 343.9868873448827);
+        'C', 343.98688734488263);
     
     ok = false(numel(test), 1);
     for i = 1:numel(test)
-        C = sound_speed_air_cramer2(test(i).T, test(i).RH, test(i).P);
+        C = sound_speed_air_cramer(test(i).T, test(i).RH, test(i).P);
         ok(i,:) = abs(C - test(i).C) < eps;
     end
 

@@ -8,12 +8,19 @@ function C = sound_speed_air_cramer(T,RH,P)
 
     T_kel = T + 273.15;
     P = P*1e3;
+    
+    A = +1.2378847e-5;
+    B = -1.9121316e-2;
+    C = +33.93711047;
+    D = -6.3431645e3;
+    
+    alpha = 1.00062;
+    beta = 3.14e-8;
+    gamma = 5.6e-7;
 
-    ENH = (3.14e-8)*P + 1.00062 + (T.^2)*(5.6e-7);
-    PSV1 = (T_kel.^2)*(1.2378847e-5) - (1.9121316e-2)*T_kel;
-    PSV2 = 33.93711047 - (6.3431645e3)./T_kel;
-    PSV = exp(PSV1).*exp(PSV2);
-    H = RH.*ENH.*PSV./P;
+    Psv = exp(A*(T_kel.^2) + B*T_kel + C + D./T_kel);
+    F = alpha + beta*P + gamma*(T.^2);
+    H = RH.*F.*Psv./P;
     Xw = H/100.0;
     Xc = 400e-6;
     
