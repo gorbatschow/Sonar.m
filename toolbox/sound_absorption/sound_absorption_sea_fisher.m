@@ -1,9 +1,9 @@
 function [alpha, Boric, MgSO4, H2O] = sound_absorption_sea_fisher(T,D,f)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius
 %   D: depth \ m
 %   f: frequency \ kHz \ 10 < f < 400
-% Results
+% Outputs
 %   alpha: absorption of sound in seawater \ dB/km
 
     T_kel = 273.1 + T;

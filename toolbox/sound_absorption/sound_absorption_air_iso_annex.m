@@ -1,10 +1,10 @@
 function alpha = sound_absorption_air_iso_annex(T,RH,P,f)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ -20 < T < +50
 %   RH: relative humidity \ percentage \ 10 < RH < 100
 %   P: pressure \ kPa
 %   f: frequency \ kHz \ 0.05 < f < 10
-% Results
+% Outputs
 %   alpha: absorption of sound in air \ dB/m
     
     Kelvin = 273.15;

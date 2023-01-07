@@ -1,7 +1,7 @@
 function alpha = sound_absorption_sea_thorp(f)
-% Arguments
+% Inputs
 %   f: frequency \ kHz
-% Results
+% Outputs
 %   alpha: absorption of sound in seawater \ dB/km
 
     alpha = 1.0936*(0.1*(f.^2)./(1+f.^2) ...

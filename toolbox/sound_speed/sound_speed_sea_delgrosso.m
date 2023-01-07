@@ -1,9 +1,9 @@
 function C = sound_speed_sea_delgrosso(T,S,P)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ 0 < T < 35 
 %   S: salinity \ ppt \ 29 < S < 43
 %   P: pressure \ kPa \ 0 < P < 98000 
-% Results
+% Outputs
 %   C: speed of sound in seawater \ m/s
 
     C000 = 1402.392;

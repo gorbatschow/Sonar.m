@@ -1,7 +1,7 @@
 function C = sound_speed_water_marczak(T)
-% Arguments
+% Inputs
 %    T: temperature \ degree Celsius \ 0 < T < 95
-% Results
+% Outputs
 %    C: speed of sound in pure water \ m/s
 
     k0 = +1.402385e+3;

@@ -1,8 +1,8 @@
 function P = depth_to_pressure_sea_leroy_97(D,L)
-% Arguments
+% Inputs
 %   D: depth \ m \ 0 < D < 4000
 %   L: latitude \ degree \ -90 < L < 90
-% Results
+% Outputs
 %   P: pressure \ kPa
 
     G = 9.7803*(1 + (5.3e-3)*sind(L).^2);

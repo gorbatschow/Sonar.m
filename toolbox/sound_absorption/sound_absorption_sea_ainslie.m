@@ -1,11 +1,11 @@
 function [alpha, Boric, MgSO4, H2O] = sound_absorption_sea_ainslie(T,S,D,f,pH)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius
 %   S: salinity \ ppt
 %   D: depth \ m
 %   f: frequency \ kHz
 %   pH: "potential of hydrogen"
-% Results
+% Outputs
 %   alpha: absorption of sound in seawater \ dB/km
 
     D = D*1e-3;

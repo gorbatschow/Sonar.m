@@ -1,9 +1,9 @@
 function C = sound_speed_sea_coppens(T,S,D)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ -2 < T < 35 
 %   S: salinity \ ppt \ 0 < S < 42
 %   D: depth \ m \ 0 < D < 4000
-% Results
+% Outputs
 %   C: speed of sound in seawater \ m/s
 
     d = D.*(1e-3);

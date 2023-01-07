@@ -1,8 +1,8 @@
 function D = pressure_to_depth_sea_bisset(P,L)
-% Arguments
+% Inputs
 %   P: pressure \ kPa
 %   L: latitude \ degree \ -90 < L < 90
-% Results
+% Outputs
 %   D: depth \ m
 
     P = P.*0.0102;

@@ -1,8 +1,8 @@
 function C = sound_speed_water_belogolskii(T, P)
-% Arguments
+% Inputs
 %    T: temperature \ degree Celsius \ 0 < T < 40
 %    P: pressure \ kPa \ 100 < P < 60000
-% Results
+% Outputs
 %    C: speed of sound in pure water \ m/s
     
     P = P*1e-3;

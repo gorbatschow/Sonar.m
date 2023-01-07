@@ -1,6 +1,6 @@
 function [alpha, Boric, MgSO4, H2O, C] = sound_absorption_sea_francois ...
     (T,S,D,f,pH)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ 
 %      -2 < T < 22 for 10 Hz < f < 500 kHz
 %      0 < T < 30 for f > 500 kHz
@@ -12,7 +12,7 @@ function [alpha, Boric, MgSO4, H2O, C] = sound_absorption_sea_francois ...
 %       0 < D < 10000 for f > 500 kHz
 %   f: frequency \ kHz
 %   pH: "potential of hydrogen"
-% Results
+% Outputs
 %   alpha: absorption of sound in seawater \ dB/km
 
     T_kel = 273 + T;

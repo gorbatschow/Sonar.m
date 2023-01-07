@@ -1,10 +1,10 @@
 function C = sound_speed_sea_npl(T,S,D,L)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ -1 < T < 30 
 %   S: salinity \ ppt \ 0 < S < 42
 %   D: depth \ m \ 0 < D < 12000
 %   L: latitude \ degree \ -90 < L < 90
-% Results
+% Outputs
 %   C: speed of sound in seawater \ m/s
 
     C = 1402.5 + 5*T - (5.44e-2)*(T.^2) + (2.1e-4)*(T.^3) ...

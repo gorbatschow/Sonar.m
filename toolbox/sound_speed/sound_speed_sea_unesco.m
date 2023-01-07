@@ -1,9 +1,9 @@
 function C = sound_speed_sea_unesco(T,S,P)
-% Arguments
+% Inputs
 %   T: temperature \ degree Celsius \ 0 < T < 40 
 %   S: salinity \ ppt \ 5 < S < 40
 %   P: pressure \ kPa \ 0 < P < 100000 
-% Results
+% Outputs
 %   C: speed of sound in seawater \ m/s
 
     C00=1402.388; C01=5.03830; C02=-5.81090e-2; C03=3.3432e-4; 

@@ -1,9 +1,9 @@
 function C = sound_speed_air_cramer(T,RH,P)
-% Arguments
+% Inputs
 %    T: temperature \ degree Celsius \ 0 < T < 30
 %   RH: relative humidity \ percentage
 %    P: pressure \ kPa \ 75 < P < 102
-% Results
+% Outputs
 %    C: speed of sound in air \ m/s
 
     T_kel = T + 273.15;
