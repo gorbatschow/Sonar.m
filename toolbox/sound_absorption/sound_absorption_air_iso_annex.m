@@ -16,7 +16,9 @@ function alpha = sound_absorption_air_iso_annex(T,RH,P,f)
     Thn = 3352.0;
     P_ref = 101.325;
     P_rel = P / P_ref;    
-    
+    Xo = 0.209;
+    Xn = 0.781;
+
     P_sat_P_ref = 10.^(-6.8346*(T_01./T_kel).^(1.261)+4.6151);
     H = RH.*(P_sat_P_ref./P_rel);
 
@@ -26,12 +28,12 @@ function alpha = sound_absorption_air_iso_annex(T,RH,P,f)
     C = 343.2*(T_rel.^(1/2));
     acr = (1.60e-10)*(T_rel.^(1/2)).*(f.^2)./P_rel;
     
-    Xo = 0.209;
-    amaxO = 1.559*Xo*((Tho./T_kel).^2).*exp(-Tho./T_kel);
+    amaxO = (2*pi/35)*(10*log10(exp(1)^2)) ...
+        *Xo*((Tho./T_kel).^2).*exp(-Tho./T_kel);
     avibO = amaxO.*(f/C).*2*(f./Fro)./(1+(f./Fro).^2);
     
-    Xn = 0.781;
-    amaxN = 1.559*Xn*((Thn./T_kel).^2).*exp(-Thn./T_kel);
+    amaxN = (2*pi/35)*(10*log10(exp(1)^2)) ...
+        *Xn*((Thn./T_kel).^2).*exp(-Thn./T_kel);
     avibN = amaxN.*(f/C).*2*(f./Frn)./(1+(f./Frn).^2);
 
     alpha = acr + avibO + avibN;
