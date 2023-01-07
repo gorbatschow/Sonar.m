@@ -3,7 +3,7 @@ function alpha = sound_absorption_air_iso_annex(T,RH,P,f)
 %   T: temperature \ degree Celsius \ -20 < T < +50
 %   RH: relative humidity \ percentage \ 10 < RH < 100
 %   P: pressure \ kPa
-%   f: frequency \ kHz \ 0.05 < f < 50
+%   f: frequency \ kHz \ 0.05 < f < 10
 % Results
 %   alpha: absorption of sound in air \ dB/m
     
@@ -30,11 +30,11 @@ function alpha = sound_absorption_air_iso_annex(T,RH,P,f)
     
     amaxO = (2*pi/35)*(10*log10(exp(1)^2)) ...
         *Xo*((Tho./T_kel).^2).*exp(-Tho./T_kel);
-    avibO = amaxO.*(f/C).*2*(f./Fro)./(1+(f./Fro).^2);
+    avibO = amaxO.*(f/C)*2.*(f./Fro)./(1+(f./Fro).^2);
     
     amaxN = (2*pi/35)*(10*log10(exp(1)^2)) ...
         *Xn*((Thn./T_kel).^2).*exp(-Thn./T_kel);
-    avibN = amaxN.*(f/C).*2*(f./Frn)./(1+(f./Frn).^2);
+    avibN = amaxN.*(f/C)*2.*(f./Frn)./(1+(f./Frn).^2);
 
     alpha = acr + avibO + avibN;
 end
