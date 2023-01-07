@@ -11,11 +11,11 @@ function result = sound_speed_sea_ex_2(func)
     
     global sonarm_lang
     if strcmpi(sonarm_lang, 'ru')
-        D_str = cellfun(@(x)['$' x '\ м$'], D_str, 'UniformOutput', false);
+        D_str = cellfun(@(x)['$' x '\ \text{м}$'], D_str, 'UniformOutput', false);
         T_str = cellfun(@(x)['$' x '°\text{C}$'], T_str, 'UniformOutput', false);
         C_str = cellfun(@(x)['$' x '$'], C_str, 'UniformOutput', false);
     else
-        D_str = cellfun(@(x)['$' x '\ m$'], D_str, 'UniformOutput', false);
+        D_str = cellfun(@(x)['$' x '\ \text{m}$'], D_str, 'UniformOutput', false);
         T_str = cellfun(@(x)['$' x '°\text{C}$'], T_str, 'UniformOutput', false);
         C_str = cellfun(@(x)['$' x '$'], C_str, 'UniformOutput', false);
     end

@@ -26,7 +26,7 @@ function C = sound_speed_sea_delgrosso(T,S,P)
     CS2TP = 0.4857614e-5;
     CSTP =-0.3406824e-3;
 
-    p = (P./100)*1.019716;
+    p = P*1.019716e-2;
 
     CT = CT1*T + CT2*(T.^2) + CT3*(T.^3);
     CS = CS1*S + CS2*(S.^2);
